@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-1cqe
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-vdot-tenant/test-app-lwdl/devfile-sample-hello-world-1cqe@sha256:66411b57a18fddf8057658189d43a0323b0664e6afcd5d75990715ee066828da
+        name: my-nginx
+        resources: {}
+status: {}
